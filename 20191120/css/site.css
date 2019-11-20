@@ -35,3 +35,21 @@ table th {
 table tbody tr:hover{
     background-color: yellow;
 }
+
+/*
+body{
+   background-color: #ccc;
+    background-image: url(https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?size=626&ext=jpg);
+    background-repeat: repeat;
+
+}
+
+p{
+    visibility: hidden;
+}*/
+
+img{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
