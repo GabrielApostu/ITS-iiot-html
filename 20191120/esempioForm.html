@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form action="/update" method="POST">
+
+        <label for="txtFirstName">Nome:</label>
+        <input type="text" name="firstName" id="txtFirstName">
+        <br>
+        <label>Cognome:
+            <input type="text" name="lastName">
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="privacy">
+            privacy
+        </label>
+        <hr>
+
+        <label>
+            <input type="radio" value="M" name="sex"> Maschio
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="F" name="sex"> Femmina
+        </label>
+        <br>
+        <label>
+            <input type="radio" value="A" name="sex"> Altro
+        </label>
+
+        <hr>
+        
+        <select name="city">
+            <option></option>
+            <option value="PN">Pordenone</option>
+            <option value="TV">Treviso</option>
+        </select>
+
+
+        <br>
+        <button type="submit">Salva</button>
+    </form>
+
+
+</body>
+
+</html>
