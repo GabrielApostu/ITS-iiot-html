@@ -1,0 +1,61 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding-left: 20px;
+}
+    ul.menu li {
+        float: left;
+        border-left: 5px double rgb(0, 195, 255);
+        padding-left: 5px;
+        margin-right: 20px;
+    }
+        ul.menu li a{
+            text-decoration: none;
+            color: rgb(0, 195, 255);
+        }
+            ul.menu li a:visited{
+                /*color: rgb(0, 195, 255);*/
+                color: #00BFFF;
+            }
+            ul.menu li a:hover{
+                text-decoration: underline;
+            }
+            ul.menu li a:active{
+                color: black;
+            }
+
+.clear{
+    clear: both;
+}
+.pnl70{
+    float: left;
+    width: 70%;
+}
+.pnl30{
+    float: left;
+    width: 30%;
+}
+.text-content{
+    padding: 10px;
+    text-align: justify;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+    table th {
+        background-color: #00BFFF;
+        color: #FFF; /* #FFFFFF */
+    }
+    table td,
+    table th{
+        border: 1px solid #00BFFF;
+    }
+
+div.footer{
+    text-align: center;
+}
