@@ -2,9 +2,16 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.menu-item{
+    float: left;
+    border-left: 5px double rgb(0, 195, 255);
+    padding-left: 5px;
+    margin-right: 20px;
+}
+
 ul.menu {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 0;
 }
     ul.menu li {
         float: left;
@@ -12,18 +19,22 @@ ul.menu {
         padding-left: 5px;
         margin-right: 20px;
     }
-        ul.menu li a{
+        ul.menu li a,
+        .menu-item a{
             text-decoration: none;
             color: rgb(0, 195, 255);
         }
-            ul.menu li a:visited{
+            ul.menu li a:visited,
+            .menu-item a:visited{
                 /*color: rgb(0, 195, 255);*/
                 color: #00BFFF;
             }
-            ul.menu li a:hover{
+            ul.menu li a:hover,
+            .menu-item a:hover{
                 text-decoration: underline;
             }
-            ul.menu li a:active{
+            ul.menu li a:active,
+            .menu-item a:active{
                 color: black;
             }
 
@@ -56,6 +67,7 @@ table{
         border: 1px solid #00BFFF;
     }
 
-div.footer{
+div.footer,
+footer.footer{
     text-align: center;
 }
