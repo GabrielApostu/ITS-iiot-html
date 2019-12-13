@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Esercitazione bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="row">
+            <div class="col">
+                <h1>Titolo</h1>
+            </div>
+        </header>
+
+        <nav class="row mt-3">
+            <div class="col-2">
+                <a href="#">Link 1</a>
+            </div>
+            <div class="col-2">
+                <a href="#">Link 2</a>
+            </div>
+            <div class="col-2">
+                <a href="#">Link 3</a>
+            </div>
+            <div class="col-2">
+                <a href="#">Link 4</a>
+            </div>
+        </nav>
+
+        <div class="row mt-3">
+            <section class="col-sm-6">
+
+                <div class="form-group row">
+                    <label for="txtUsername1" class="col-4">Username:</label>
+                    <div class="col-8">
+                        <input class="form-control" id="txtUsername1" name="username">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="txtPassword1" class="col-4">Password:</label>
+                    <div class="col-8">
+                        <input type="password" 
+                               class="form-control" 
+                               id="txtPassword1" 
+                               name="password">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8 offset-4">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+
+            </section>
+            <section class="col-sm-6">
+
+                <div class="form-group">
+                    <label for="txtUsername2">Username:</label>
+                    <input class="form-control" id="txtUsername2" name="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPassword2">Password:</label>
+                    <input type="password" 
+                            class="form-control" 
+                            id="txtPassword2" 
+                            name="password">
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row mt-3">
+            <article class="col-sm-8">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi a nemo vero unde, inventore, sit culpa molestiae odit odio illum beatae incidunt ea amet fugiat? Quidem ab suscipit sequi in.</p>
+            </article>
+            <article class="col-sm-4">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quo, laboriosam iusto numquam quis suscipit laudantium doloribus similique iure! Eius libero iusto laborum dolores impedit. Nam ab nihil nesciunt maiores?</p>
+            </article>
+        </div>
+
+        <footer class="text-center mt-3">
+            <p>footer</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
