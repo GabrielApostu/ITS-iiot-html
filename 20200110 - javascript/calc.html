@@ -16,64 +16,64 @@
                 <input type="text" class="form-control" readonly id="txtDisplay">
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-danger btn-block">C</button>
+                <button type="button" class="btn btn-danger btn-block" onclick="resetCalc()">C</button>
             </div>
         </div>
 
         <div class="row mt-3">
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">7</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(7)">7</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">8</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(8)">8</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">9</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(9)">9</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-secondary btn-block">/</button>
-            </div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">4</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">5</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">6</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-secondary btn-block">*</button>
+                <button type="button" class="btn btn-secondary btn-block" onclick="pressOp('/')">/</button>
             </div>
         </div>
 
         <div class="row mt-3">
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">1</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(4)">4</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">2</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(5)">5</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">3</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(6)">6</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-secondary btn-block">-</button>
+                <button type="button" class="btn btn-secondary btn-block" onclick="pressOp('*')">*</button>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-3">
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(1)">1</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(2)">2</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(3)">3</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-secondary btn-block" onclick="pressOp('-')">-</button>
             </div>
         </div>
 
         <div class="row mt-3">
             <div class="col-3 offset-3">
-                <button type="button" class="btn btn-primary btn-block">0</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="pressNum(0)">0</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-success btn-block">=</button>
+                <button type="button" class="btn btn-success btn-block" onclick="executeCalc()">=</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-secondary btn-block">+</button>
+                <button type="button" class="btn btn-secondary btn-block" onclick="pressOp('+')">+</button>
             </div>
         </div>
 
