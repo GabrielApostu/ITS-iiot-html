@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    
-    <textarea rows="5" cols="40"></textarea>
 
+<body>
 
     <input type="text" id="txtInput">
     <button type="button" id="btnGo">GO</button>
+    <button type="button" id="btnGetAPI">API</button>
+
     <br>
     <div id="pnlOutput"></div>
 
     <script>
         var txt = document.getElementById("txtInput");
         var btn = document.getElementById("btnGo");
+        var btnApi = document.getElementById("btnGetAPI");
         var pnl = document.getElementById("pnlOutput");
 
-        btn.addEventListener("click", function(){
+        btn.addEventListener("click", function () {
 
             // var html = "<h1 style='color:red'>";
             // html = html + txt.value;
@@ -41,7 +43,33 @@
             pnl.appendChild(title)
         });
 
+
+        btnApi.addEventListener("click", function () {
+            getSWData('https://swapi.co/api/people');
+        });
+
+        function getSWData(url){
+            var list = 0;
+            fetch(url).then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                list = data.count;
+
+                console.log(data);
+                for (let i = 0; i < data.results.length; i++) {
+                    const person = data.results[i];
+                    var name = document.createElement("h2");
+                    name.innerHTML = person.name;
+                    pnl.appendChild(name);
+                }
+                if(data.next)
+                    getSWData(data.next);
+            });
+            console.log(list);
+        }
+
     </script>
 
 </body>
+
 </html>
