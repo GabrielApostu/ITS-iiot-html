@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <textarea rows="5" cols="40"></textarea>
+
+
+    <input type="text" id="txtInput">
+    <button type="button" id="btnGo">GO</button>
+    <br>
+    <div id="pnlOutput"></div>
+
+    <script>
+        var txt = document.getElementById("txtInput");
+        var btn = document.getElementById("btnGo");
+        var pnl = document.getElementById("pnlOutput");
+
+        btn.addEventListener("click", function(){
+
+            // var html = "<h1 style='color:red'>";
+            // html = html + txt.value;
+            // html = html + "</h1>";
+            // pnl.innerHTML = html;
+
+            var title = document.createElement("h1");
+            title.innerHTML = txt.value;
+            title.style.color = "red";
+
+            var subTitle = document.createElement("span");
+            subTitle.style.fontSize = "10px";
+            subTitle.classList.add("text-danger");
+            subTitle.innerHTML = " its kennedy";
+            title.appendChild(subTitle);
+
+            pnl.appendChild(title)
+        });
+
+    </script>
+
+</body>
+</html>
