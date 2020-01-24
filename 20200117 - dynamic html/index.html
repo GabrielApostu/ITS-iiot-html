@@ -33,6 +33,8 @@
             var title = document.createElement("h1");
             title.innerHTML = txt.value;
             title.style.color = "red";
+            title.addEventListener("click", function(){this.remove()});
+
 
             var subTitle = document.createElement("span");
             subTitle.style.fontSize = "10px";
