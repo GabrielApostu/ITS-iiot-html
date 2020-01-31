@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrello</title>
+</head>
+<body>
+    
+    <select id="selType">
+        <option></option>
+        <option value="apple">apple</option>
+        <option value="orange">orange</option>
+    </select>
+
+    <input type="number" id="txtQuantity">
+
+    <button type="button" onclick="addItem()">ADD</button>
+
+    <hr>
+    <button type="button" onclick="getTotals()">TOTALE</button>
+
+    <div id="pnlResults"></div>
+
+
+    <script src="basket.js"></script>
+</body>
+</html>
