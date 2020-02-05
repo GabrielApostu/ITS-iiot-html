@@ -1,0 +1,14 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "CommonJS",
+        "noEmitOnError": true,
+        "target": "ES3",
+        "typeRoots": [
+            "node_modules/@types"
+          ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
