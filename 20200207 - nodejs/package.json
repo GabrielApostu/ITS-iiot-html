@@ -1,0 +1,14 @@
+{
+    "name": "test-its",
+    "description": "Primo esercizio con Node.js",
+    "authors": "Andrea Dottor",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {
+        "underscore": "^1.9.2"
+    },
+    "devDependencies": {
+        "@types/node": "^13.7.0",
+        "@types/underscore": "^1.9.4"
+    }
+}
