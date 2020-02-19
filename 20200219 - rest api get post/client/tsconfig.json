@@ -1,0 +1,11 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "None",
+        "target": "ES3",
+        "noEmitOnError": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
