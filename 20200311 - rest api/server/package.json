@@ -1,0 +1,14 @@
+{
+    "name": "sample-get-e-post",
+    "description": "Esercitazione con GET e POST",
+    "authors": "Andrea Dottor",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {
+        "fastify": "^2.12.0",
+        "fastify-cors": "^3.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^13.7.2"
+    }
+}
