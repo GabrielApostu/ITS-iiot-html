@@ -1,0 +1,9 @@
+{
+    "name": "sample-web-get-post",
+    "description": "Esercitazione get e post",
+    "authors": "Andrea Dottor",
+    "version": "1.0.0",
+    "dependencies": {
+        "bootstrap": "^4.4.1"
+    }
+}

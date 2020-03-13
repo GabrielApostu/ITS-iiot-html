@@ -1,6 +1,7 @@
 import * as fastify from 'fastify'
 import * as cors from 'fastify-cors'
 
+
 var app = fastify({logger: true});
 app.register(cors);
 
@@ -20,7 +21,9 @@ app.get("/items/:author", (request, reply) => {
     reply.send(temp);
 });
 
-app.post("/items", (request, reply) => {
+
+
+app.post("/items" ,(request, reply) => {
     var item = request.body as ToDoItem;
     var errors: string[] = [];
 

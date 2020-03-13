@@ -18,12 +18,18 @@ app.get("/items/:author", (request, reply) => {
 });
 app.post("/items", (request, reply) => {
     var item = request.body;
+    var errors = [];
     if (!item.author) {
-        reply.status(400).send({ error: "Campo 'author' obbligatorio" });
-        return;
+        errors.push("Campo 'author' obbligatorio");
+    }
+    if (item.author.length < 3) {
+        errors.push("Campo 'author' deve essere lungo almeno 3 caratteri");
     }
     if (!item.description) {
-        reply.status(400).send({ error: "Campo 'description' obbligatorio" });
+        errors.push("Campo 'description' obbligatorio");
+    }
+    if (errors.length > 0) {
+        reply.status(400).send({ errors: errors });
         return;
     }
     list.push(item);
