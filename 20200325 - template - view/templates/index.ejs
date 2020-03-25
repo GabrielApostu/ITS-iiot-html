@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ITS fastify point-of-view</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text-info"><%= firstName %> <%= lastName %></h1>
+
+        <ul>
+            <% list.forEach(function(color){  %>
+                <li style="font-size: 10px; color: <%= color %>;"><%= color %></li>
+            <% }) %>
+        </ul>
+
+    </div>
+
+
+</body>
+</html>
