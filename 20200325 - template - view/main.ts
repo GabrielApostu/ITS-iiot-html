@@ -3,7 +3,19 @@ import * as staticFile from 'fastify-static'
 import * as pointOfView from 'point-of-view'
 import path = require('path');
 
+class User{
+  constructor(
+          public firstName: string, 
+          public lastName: string){
+          }
+}
+
 var app = fastify({logger: true});
+
+var list: User[] =[];
+list.push(new User("Andrea", "Dottor"));
+list.push(new User("Lorenzo", "Dottor"));
+
 
 app.register(pointOfView, {
   engine: {

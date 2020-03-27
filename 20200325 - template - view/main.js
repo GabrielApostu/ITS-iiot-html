@@ -4,7 +4,16 @@ const fastify = require("fastify");
 const staticFile = require("fastify-static");
 const pointOfView = require("point-of-view");
 const path = require("path");
+class User {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
 var app = fastify({ logger: true });
+var list = [];
+list.push(new User("Andrea", "Dottor"));
+list.push(new User("Lorenzo", "Dottor"));
 app.register(pointOfView, {
     engine: {
         ejs: require('ejs')
